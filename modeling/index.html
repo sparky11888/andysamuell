@@ -5,7 +5,7 @@ title: Modeling
 <div class="blurb">
 	<h1>Modeling Portfolio</h1>
 	{% for image in site.static_files %}
-		{% for image.path contains 'img/model/' %}
+		{% if image.path contains 'img/model/' %}
 			<img src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
 		{% endif %} 
 	{% endfor %}
