@@ -5,10 +5,12 @@ title: Contact
 <div class="blurb">
 	<h1>Need to reach out?</h1>
 	<h3>Feel free to shoot me an email using the form below or message me on instagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a>!</h3>
-	<form action="https://formspree.io/andysamuell100@gmail.com"
+	<form id="emailform" action="https://formspree.io/andysamuell100@gmail.com"
 	      method="POST">
 	    <p>
-	    <label for="name">Name: </label>
+	    Name:
+	    </p>
+	    <p>
 	    <input id="name" type="text" name="name">
 	    </p>
 
@@ -18,8 +20,10 @@ title: Contact
 	    </p>
 
 	    <p>
-	    <label for="message">Message: </label>
-	    <input id="message" type="text" name="message" style="width:400px;">
+	    Message:
+	    </p>
+	    <p>
+	    <textarea name="message" form="emailform">Enter text here...</textarea>
 	    </p>
 
 	    <p>
