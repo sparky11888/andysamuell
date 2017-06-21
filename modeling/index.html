@@ -4,4 +4,11 @@ title: Modeling
 ---
 <div class="blurb">
 	<h1>Modeling Portfolio</h1>
+	{% for image in site.static_files %}
+		{% for image.path contains 'img/model/' %}
+			<img src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
+		{% endif %} 
+	{% endfor %}
+	<h3>Check out my intagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a></h3>
+	<h3>If you're interested in working together, feel free to contact me via instagram or take a look at my contact page!</h3>
 </div><!-- /.blurb -->
