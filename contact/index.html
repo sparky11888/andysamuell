@@ -4,12 +4,27 @@ title: Contact
 ---
 <div class="blurb">
 	<h1>Need to reach out?</h1>
-	<h3>Feel free to shoot me an email using the form below or dm me on instagram @andysamuell!</h3>
+	<h3>Feel free to shoot me an email using the form below or message me on instagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a>!</h3>
 	<form action="https://formspree.io/andysamuell100@gmail.com"
 	      method="POST">
-	    <input type="text" name="name">
-	    <input type="email" name="_replyto">
+	    <p>
+	    <label for="name">Name: </label>
+	    <input id="name" type="text" name="name">
+	    </p>
+
+	    <p>
+	    <label for="email">Email: </label>
+	    <input id="email" type="email" name="_replyto">
+	    </p>
+
+	    <p>
+	    <label for="message">Message: </label>
+	    <input id="message" type="text" name="message" style="width:400px;">
+	    </p>
+
+	    <p>
 	    <input type="submit" value="Send">
+		</p>
 	</form>
 
 </div><!-- /.blurb -->
