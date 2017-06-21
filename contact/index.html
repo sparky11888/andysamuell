@@ -7,19 +7,25 @@ title: Contact
 	<h3>Feel free to shoot me an email using the form below or message me on instagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a>!</h3>
 	<form id="emailform" action="https://formspree.io/andysamuell100@gmail.com"
 	      method="POST">
-	    <p>
+	    <p style="margin:0 0 -10px 0;">
 	    <label for="name">Name:</label>
+	    </p>
+	    <p>
 	    <input id="name" type="text" name="name">
 	    </p>
 
+	    <p style="margin:0 0 -10px 0;">
+	    <label for="email">Email for Reply:</label>
+	    </p>
 	    <p>
-	    <label for="email">Email:</label>
 	    <input id="email" type="email" name="_replyto">
 	    </p>
 
-	    <p>
+	    <p style="margin:0 0 -10px 0;">
 	    <label for="message">Message:</label>
-	    <textarea name="message" form="emailform" style="width:400px;">Enter text here...</textarea>
+	    </p>
+	    <p>
+	    <textarea name="message" form="emailform" style="height:200px; width:300px;">Enter text here...</textarea>
 	    </p>
 	    <p>
 	    <input type="submit" value="Send">
