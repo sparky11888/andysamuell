@@ -6,7 +6,7 @@ title: Modeling
 	<h1>Modeling Portfolio</h1>
 	{% for image in site.static_files %}
 		{% if image.path contains 'img/model/' %}
-			<img src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
+			<img style="width:200px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
 		{% endif %} 
 	{% endfor %}
 	<h3>Check out my intagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a></h3>
