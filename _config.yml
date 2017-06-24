@@ -1,2 +1,5 @@
-name: Andrew S. Li, Software Engineer
-markdown: kramdown
+title: Minimal theme
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: 
