@@ -4,14 +4,19 @@ title: Modeling
 ---
 <div class="blurb">
 	<h1>Modeling Portfolio</h1>
+
+	<h4>For more check out my instagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a> or my <a href="http://www.modelmayhem.com/andysamuell" alt="link to model mayhem profile">modelmayhem profile</a></h4>
+	<h4>If you're interested in working together, feel free to contact me via instagram or shoot me a message through my contact page!</h4>
+	
 	{% for image in site.static_files %}
 		{% if image.path contains 'img/model/vertical' %}
 			<img style="height:220px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
 		{% endif %} 
+	{% endfor %}
+	{% for image in site.static_files %}
 		{% if image.path contains 'img/model/horizontal' %}
-			<img style="height:175px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
+			<img style="height:160px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
 		{% endif %} 
 	{% endfor %}
-	<h4>For more check out my instagram <a href="https://www.instagram.com/andysamuell" alt="link to instagram account">@andysamuell</a> or my <a href="http://www.modelmayhem.com/andysamuell" alt="link to model mayhem profile">modelmayhem profile</a></h4>
-	<h4>If you're interested in working together, feel free to contact me via instagram or shoot me a message through my contact page!</h4>
+
 </div><!-- /.blurb -->
