@@ -9,15 +9,16 @@ title: Modeling
 	<h4>If you're interested in working together, feel free to contact me via instagram or shoot me a message through my contact page!</h4>
 	
 	{% for image in site.static_files %}
-		{% if image.path contains 'img/model/vertical' %}
-			<img style="height:220px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
+		{% if image.path contains 'img/model/vertical/' %}
+			<img style="height:245px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
 		{% endif %} 
 	{% endfor %}
 
-	<!-- {% for image in site.static_files %}
+
+	{% for image in site.static_files %}
 		{% if image.path contains 'img/model/horizontal' %}
 			<img style="height:155px;" src="{{ site.baseurl }}{{ image.path }}" alt="model image" />
 		{% endif %} 
 	{% endfor %}
- -->
+ 
 </div><!-- /.blurb -->
